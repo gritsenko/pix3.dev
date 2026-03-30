@@ -6,6 +6,26 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Pix3 | The Technical Alchemist for 3D Playable Ads</title>
+    <meta name="description" content="Workstation-grade WebGL engine for 3D playable ads — AI-driven workflows and real-time collaboration.">
+    <link rel="canonical" href="https://pix3.dev/">
+    <!-- Open Graph / Social Preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pix3 | The Technical Alchemist for 3D Playable Ads">
+    <meta property="og:description" content="Workstation-grade WebGL engine for 3D playable ads — AI-driven workflows and real-time collaboration.">
+    <meta property="og:url" content="https://pix3.dev/">
+    <meta property="og:site_name" content="Pix3">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://pix3.dev/media/editor-interface.jpg">
+    <meta property="og:image:secure_url" content="https://pix3.dev/media/editor-interface.jpg">
+    <meta property="og:image:alt" content="Pix3 editor interface preview">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pix3 | The Technical Alchemist for 3D Playable Ads">
+    <meta name="twitter:description" content="Workstation-grade WebGL engine for 3D playable ads — AI-driven workflows and real-time collaboration.">
+    <meta name="twitter:image" content="https://pix3.dev/media/editor-interface.jpg">
+    <meta name="twitter:image:alt" content="Pix3 editor interface preview">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
@@ -85,14 +105,37 @@
         }
     </script>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+            (function (m, e, t, r, i, k, a) {
+                m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+                m[i].l = 1 * new Date();
+                for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+                k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+            })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=108302071', 'ym');
+
+        ym(108302071, 'init', { ssr: true, webvisor: true, clickmap: true, ecommerce: "dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce: true, trackLinks: true });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/108302071" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
 </head>
 
 <body class="selection:bg-primary selection:text-on-primary-container overflow-x-hidden">
     <!-- Top Navigation Bar -->
     <nav class="fixed top-0 w-full z-50 bg-zinc-950/60 backdrop-blur-xl no-line-rule bg-zinc-900/50">
         <div class="flex justify-between items-center px-8 h-16 max-w-screen-2xl mx-auto w-full">
-            <div class="text-xl font-bold tracking-tighter text-white uppercase font-['Space_Grotesk']">
-                Pix3
+            <div class="flex items-center space-x-4">
+                <a href="/" class="flex items-center">
+                    <img src="media/splash-logo.png" alt="Pix3" class="h-8 w-auto">
+                </a>
+                <a href="https://github.com/gritsenko/pix3" target="_blank" rel="noopener noreferrer" class="hidden sm:flex items-center space-x-2 px-2 py-1 rounded-md bg-zinc-800/50 hover:bg-zinc-800 transition-colors border border-zinc-700/50">
+                    <svg class="w-4 h-4 text-zinc-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <span class="text-[10px] text-zinc-300 font-medium uppercase tracking-wider">Open Source</span>
+                </a>
             </div>
             <div class="hidden md:flex items-center space-x-8 font-['Space_Grotesk'] text-sm tracking-tight">
                 <a class="text-zinc-400 font-medium hover:text-white transition-colors hover:text-yellow-400 transition-all duration-300"
@@ -124,7 +167,7 @@
                 The Ultimate Editor for <span class="text-primary italic">3D Playable Ads</span> and Mini-Games
             </h1>
             <p class="font-body text-lg text-on-surface-variant max-w-2xl mx-auto mb-10 leading-relaxed">
-                Empower your creative studio with a workstation-grade WebGL engine. Build ThreeJS experiences optimized
+                Open-source workstation-grade WebGL engine. Build ThreeJS experiences optimized
                 for ad networks with AI-driven workflows and real-time collaboration.
             </p>
             <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-20">
@@ -346,8 +389,7 @@
     <!-- Final CTA -->
     <section class="py-24 px-8">
         <div class="max-w-5xl mx-auto bg-primary rounded-lg p-12 text-center relative overflow-hidden">
-            <div
-                class="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('media/carbon-fibre.png')]">
+            <div class="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('media/carbon-fibre.png')]">
             </div>
             <h2 class="font-headline text-4xl font-black text-on-primary mb-6 relative z-10">READY TO ASCEND?</h2>
             <p class="text-on-primary/80 font-medium mb-10 max-w-xl mx-auto relative z-10">
